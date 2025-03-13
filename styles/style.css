@@ -1,1 +1,276 @@
 /* место для вашего кода */
+body {
+    text-underline-offset: 4px;
+}
+
+header {
+    padding: 92px 50px 96px 50px;
+    display:grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    
+    nav {
+        ul {
+            display: flex;
+            gap: 33px;
+            list-style: circle;
+            li:first-child {
+                list-style: none;
+            }
+        }
+    }
+}
+address {
+    font-style: normal;
+    justify-self: end;
+    line-height: 24.3px;
+    max-width: 240px;
+    padding-right: 10px;
+    ul {
+        list-style: none;
+    }
+}
+.main_logo {
+    display: block;
+    img {
+        display: block;
+        width: 136px;
+    }
+}
+    
+.cover {
+    background-image: url("../images/cover.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding: 165px 50px 50px 50px;
+    
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    margin-bottom: 106px;
+    
+    span {
+        display: block;
+        margin-bottom: 20px;
+        
+
+    }
+    .second_word {
+        text-align: center;
+        margin-left: 30px;
+    }
+    .third_word {
+        text-align: end;
+        margin-right: -30px;
+    }
+}
+
+.description {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-spacing: 18px;
+    letter-spacing: 0.1px;
+    /* padding-top: 1px; чуть уменьшаем погрешность */
+    padding-top: 1px;
+    button {
+        height: 50px;
+        width: 256px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        text-transform: inherit;
+        color: inherit;
+        background-color: transparent;
+        border: 1px solid white;
+    }
+}
+
+.overlay:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: 0;
+
+}
+
+.cover_wraper {
+    position: relative;
+  
+}
+
+.lots {
+
+    padding: 180px 24px 118px 24px;
+
+    h2 {
+        padding-bottom: 27px;
+        padding-left: 40px;
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    li {
+        list-style: none;
+        min-height: 596px;
+        width: 334px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .card_type_film {
+        background-image: url("../images/card-lot-01.jpg");
+    }
+    .card_type_book {
+        background-image: url("../images/card-lot-02.jpg");
+    }
+    .card_type_picture {
+        background-image: url("../images/card-lot-03.jpg");
+    }
+
+    ul {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        
+    }
+    a, article {
+        height: 100%;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 48px 40px;
+        /* background-color: black; */
+        color: white;
+        position: relative;
+        
+        h3 {
+           font-size: 22px;
+           font-weight: 700;
+           text-transform: uppercase;
+           line-height: 120%;
+           
+           text-decoration: underline;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 120%;
+        }
+    
+
+    }
+    .lots__look-more-link {
+            margin-top: 30px;
+            margin-left: 40px;
+            font-size: 20px;
+            font-weight: 400;
+            text-decoration: underline;
+            display: block;
+
+    }
+}
+
+.about {
+    display: grid;
+    padding: 6px 24px 180px 24px;
+    grid-template-columns: 334px 1fr;
+    gap: 25px;
+    div.round {
+        background-color: black;
+        margin-top: 35px;
+        display: flex;
+        height: 240px;
+        width: 240px;
+        border-radius: 50%;
+        justify-self: center;
+    }
+
+    .about_logo {
+        height: 114px;
+        align-self: center;
+    }
+    h2 {
+        padding-bottom: 100px;
+        padding-top: 133px;
+        /* padding-left: 25px; */
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 120%;
+        max-width: 688px;
+        /* padding-left: 25px; */
+
+    }
+    p.first_paragraph {
+        padding-bottom: 24px;
+    
+    }
+
+}
+
+footer {
+    padding: 0 50px 82px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1100px;
+    justify-content: space-between;
+    font-size: 18px;
+
+    nav {
+        ul {
+            list-style: none;
+            text-align: center;
+        }
+    }
+    address {
+        justify-self: start;
+        padding-right: 0px;
+    }
+}
+
+.social {
+    ul {
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
+    list-style: none;
+    justify-self: end;
+    }
+ img {
+    height: 48px;
+
+    
+ }
+}
+
+
