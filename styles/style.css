@@ -64,11 +64,11 @@ h1 {
         
 
     }
-    .second_word {
+    .middle_word {
         text-align: center;
         margin-left: 30px;
     }
-    .third_word {
+    .end_word {
         text-align: end;
         margin-right: -30px;
     }
@@ -130,14 +130,7 @@ h1 {
         font-weight: 700;
         text-transform: uppercase;
     }
-    li {
-        list-style: none;
-        min-height: 596px;
-        width: 334px;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-    }
+
 
     .card_type_film {
         background-image: url("../images/card-lot-01.jpg");
@@ -158,13 +151,19 @@ h1 {
     a, article {
         height: 100%;
     }
-    article {
+    .cards {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 48px 40px;
         /* background-color: black; */
-        color: white;
+        color: rgb(255, 255, 255);
+        position: relative;
+        list-style: none;
+        min-height: 596px;
+        width: 334px;
+        background-position: center;
+        background-size: cover;
         position: relative;
         
         h3 {
@@ -174,11 +173,13 @@ h1 {
            line-height: 120%;
            
            text-decoration: underline;
+           z-index: 1;
         }
         p {
             font-size: 20px;
             font-weight: 400;
             line-height: 120%;
+            z-index: 1;
         }
     
 
@@ -229,11 +230,11 @@ h1 {
         line-height: 120%;
         max-width: 688px;
         /* padding-left: 25px; */
+    
 
     }
-    p.first_paragraph {
+    p:first-of-type {
         padding-bottom: 24px;
-    
     }
 
 }
@@ -273,4 +274,7 @@ footer {
  }
 }
 
+.active {
+    text-decoration: none;
+}
 
